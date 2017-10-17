@@ -5,6 +5,7 @@ choco install -y googlechrome;
 choco install -y vagrant;
 choco install -y virtualbox;
 choco install -y git;
+choco install -y nvm;
 choco install -y slack;
 choco install -y sublimetext3;
 choco install -y filezilla;
