@@ -2,6 +2,7 @@ choco install -y chocolatey;
 choco install -y 7zip.install;
 choco install -y malwarebytes; 
 choco install -y googlechrome;
+choco install -y spotify;
 choco install -y vagrant;
 choco install -y virtualbox;
 choco install -y git;
