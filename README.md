@@ -7,7 +7,7 @@ Software Management Automation allows for often reinstalling windows. I tend to 
 open powershell with admin rights.
 
 ```
-Start-BitsTransfer -Source https://raw.githubusercontent.com/hafah/choco/master/install.ps1 -Destination hafah-install.sh; ./hafah-install.ps;
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/hafah/choco/master/install.ps1'))
 ```
 
 close cmd (or all your terminals) open a terminal and copy and paste the `install.sh` content into your terminal.
