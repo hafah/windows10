@@ -1,5 +1,3 @@
-#!/bin/bash
-
 choco install -y chocolatey;
 choco install -y 7zip.install;
 choco install -y malwarebytes; 
