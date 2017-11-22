@@ -19,21 +19,27 @@ iex (
 
 ```sh
 ```
-### and know?
+
+### Basic chocolatey commands
 
 ###### list
 
-`choco upgrade all --noop`
+`choco list -lo`
 
 
 ###### upgrade
 
 `choco upgrade all`
 
-###### remove
+###### uninstall
 
 `choco uninstall [packagename]`
 
+### Further Reading
+
+* [Chocolatey installation manual.](https://chocolatey.org/install)
+* [List of other programs.](https://chocolatey.org/packages)
+* [Chocolatey Documentation](https://chocolatey.org/docs)
 
 ### Note
 I have to install desktop.github manually since it never installs through chocolatey.
