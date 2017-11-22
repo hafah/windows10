@@ -1,16 +1,39 @@
-# Information
-Software Management Automation allows for often reinstalling windows. I tend to reinstall windows every couple months. I use [chocolatey](https://chocolatey.org/). So if you've got that installed.
+# Keeping your windows installation fresh.
 
-## Getting Started
+Software Management Automation allows for often reinstalling windows. I tend to reinstall windows every couple months. I use [chocolatey](https://chocolatey.org/) to install all the programs I use in one go.
 
-### powershell
-open powershell with admin rights.
+### Installation
 
+###### Windows (PowerShell)
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force;
+$uri = 'https://raw.githubusercontent.com/hafah/choco/master/install.ps1'
+iex (
+    (New-Object System.Net.WebClient)
+    .DownloadString($uri)
+)
 ```
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/hafah/choco/master/install.ps1'))
-```
 
-close cmd (or all your terminals) open a terminal and copy and paste the `install.sh` content into your terminal.
+###### Unix
+
+```sh
+```
+### and know?
+
+###### list
+
+`choco upgrade all --noop`
+
+
+###### upgrade
+
+`choco upgrade all`
+
+###### remove
+
+`choco uninstall [packagename]`
+
 
 ### Note
 I have to install desktop.github manually since it never installs through chocolatey.
