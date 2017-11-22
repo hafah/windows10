@@ -6,6 +6,7 @@ choco install -y ffmpeg;
 choco install -y filezilla;
 choco install -y git;
 choco install -y googlechrome;
+choco install -y logitech-options;
 choco install -y malwarebytes;
 choco install -y nvm;
 choco install -y php;
