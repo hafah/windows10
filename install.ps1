@@ -9,6 +9,7 @@ choco install -y googlechrome;
 choco install -y malwarebytes;
 choco install -y nvm;
 choco install -y php;
+choco install -y putty;
 choco install -y slack;
 choco install -y spotify;
 choco install -y sublimetext3;
