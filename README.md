@@ -8,7 +8,7 @@ Software Management Automation allows for often reinstalling windows. I tend to 
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-$uri = 'https://raw.githubusercontent.com/hafah/choco/master/install.ps1'
+$uri = 'https://raw.githubusercontent.com/hafah/windows10/master/install.ps1'
 iex (
     (New-Object System.Net.WebClient)
     .DownloadString($uri)
