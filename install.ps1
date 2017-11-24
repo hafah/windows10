@@ -8,7 +8,9 @@ choco install -y git;
 choco install -y googlechrome;
 choco install -y logitech-options;
 choco install -y malwarebytes;
+choco install -y mysql.workbench
 choco install -y nvm;
+choco install -y office365business;
 choco install -y php;
 choco install -y putty;
 choco install -y slack;
