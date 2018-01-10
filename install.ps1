@@ -2,6 +2,7 @@ choco install -y 7zip.install;
 choco install -y atom;
 choco install -y chocolatey;
 choco install -y composer;
+choco install -y docker-for-windows;
 choco install -y ffmpeg;
 choco install -y filezilla;
 choco install -y git;
