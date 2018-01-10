@@ -1,4 +1,3 @@
-
 # Keeping your windows installation fresh.
 
 Software Management Automation allows for often reinstalling windows. I tend to reinstall windows every couple months. I use [chocolatey](https://chocolatey.org/) to install all the programs I use in one go.
@@ -12,7 +11,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 $uri = 'https://chocolatey.org/install.ps1'
 iex (
     (New-Object System.Net.WebClient)
-    .DownloadString()
+    .DownloadString($uri)
 )
 
 ```
