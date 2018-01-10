@@ -1,4 +1,4 @@
-;choco install -y 7zip.install;
+choco install -y 7zip.install;
 choco install -y atom;
 choco install -y chocolatey;
 choco install -y composer;
