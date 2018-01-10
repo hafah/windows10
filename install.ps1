@@ -1,4 +1,4 @@
-choco install -y 7zip.install;
+;choco install -y 7zip.install;
 choco install -y atom;
 choco install -y chocolatey;
 choco install -y composer;
@@ -9,7 +9,7 @@ choco install -y git;
 choco install -y googlechrome;
 choco install -y logitech-options;
 choco install -y malwarebytes;
-choco install -y mysql.workbench
+choco install -y mysql.workbench;
 choco install -y nvm;
 choco install -y office365business;
 choco install -y php;
