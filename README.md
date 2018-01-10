@@ -11,7 +11,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 $uri = 'https://chocolatey.org/install.ps1'
 iex (
     (New-Object System.Net.WebClient)
-    .DownloadString($uri)
+    .DownloadString("$uri")
 )
 
 ```
@@ -21,7 +21,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 $uri = 'https://raw.githubusercontent.com/hafah/windows10/master/install.ps1'
 iex (
     (New-Object System.Net.WebClient)
-    .DownloadString($uri)
+    .DownloadString("$uri")
 )
 ```
 
