@@ -8,15 +8,11 @@ Software Management Automation allows for often reinstalling windows. I tend to 
 ```powershell
 # install chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; 
-$uri = 'https://chocolatey.org/install.ps1'
-iex ((New-Object System.Net.WebClient).DownloadString("$uri"))
-
-```
-```powershell
-# install list of programs
-Set-ExecutionPolicy Bypass -Scope Process -Force;
-$uri = 'https://raw.githubusercontent.com/hafah/windows10/master/install.ps1'
-iex ((New-Object System.Net.WebClient).DownloadString("$uri"))
+$uri = 'https://chocolatey.org/install.ps1';
+iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
+refreshenv;
+$uri = 'https://raw.githubusercontent.com/hafah/windows10/master/install.ps1';
+iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
 ```
 
 
