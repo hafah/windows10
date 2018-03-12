@@ -20,7 +20,25 @@ iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
 ###### Ubuntu
 
 ```sh
-sudo apt-get -y install && sudo apt-get -y upgrade && sudo apt-get -y install build-essential curl dos2unix tmux wget zip vagrant fish-common git golang-go html2text python3 php php-curl python-minimal python-software-properties p7zip-full vagrant virtualbox dkms zip && sudo apt-get install software-properties-common && sudo apt-add-repository -y ppa:rael-gc/rvm && sudo apt-get update && sudo apt-get install rvm && source /etc/profile.d/rvm.sh
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install build-essential curl dos2unix tmux wget zip vagrant fish-common 
+sudo apt-get -y install git golang-go html2text python3 php php-curl python-minimal python-software-properties 
+sudo apt-get -y install p7zip-full vagrant virtualbox dkms zip software-properties-common
+
+sudo apt-add-repository -y ppa:rael-gc/rvm
+
+sudo apt-get update 
+sudo apt-get install rvm
+source /etc/profile.d/rvm.sh
+```
+
+###### wsl doesn't need virtualbox for vagrant
+
+```sh
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+sudo apt-get purge virtualbox
+sudo apt-get remove virtualbox-dkms
 ```
 
 ### Basic chocolatey commands
