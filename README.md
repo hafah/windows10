@@ -20,17 +20,16 @@ iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
 ###### Ubuntu
 
 ```sh
+sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install build-essential curl dos2unix tmux wget zip vagrant fish-common nodejs 
 sudo apt-get -y install git golang-go html2text python3 php php-curl python-minimal python-software-properties 
-sudo apt-get -y install p7zip-full vagrant virtualbox dkms zip software-properties-common
-
-sudo apt-add-repository -y ppa:rael-gc/rvm
-
-sudo apt-get update 
-sudo apt-get install rvm
+sudo apt-get -y install p7zip-full vagrant virtualbox dkms zip software-properties-common rvm
 source /etc/profile.d/rvm.sh
+
+rvm install 2.3.1
+sudo gem install tmuxodoro
 ```
 
 ###### wsl doesn't need virtualbox for vagrant
