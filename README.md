@@ -30,6 +30,9 @@ source /etc/profile.d/rvm.sh
 
 rvm install 2.3.1
 sudo gem install tmuxodoro
+
+sudo apt-get-y install php php-pear
+pecl install xdebug
 ```
 
 ###### wsl doesn't need virtualbox for vagrant
