@@ -31,7 +31,8 @@ source /etc/profile.d/rvm.sh
 rvm install 2.3.1
 sudo gem install tmuxodoro
 
-sudo apt-get-y install php php-pear
+sudo apt-get -y install php php-pear
+sudo apt-get -y install php7.0-dev
 pecl install xdebug
 ```
 
