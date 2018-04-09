@@ -1,6 +1,6 @@
 # I don't want to click NEXT
 
-I tend to reinstall windows every couple months with the help of [chocolatey](https://chocolatey.org/).
+I tend to reinstall windows every month with the help of [chocolatey](https://chocolatey.org/).
 
 ### Installation
 
