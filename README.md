@@ -1,7 +1,6 @@
+# I don't want to click NEXT
 
-# Keeping your windows installation fresh.
-
-Software Management Automation allows for often reinstalling windows. I tend to reinstall windows every couple months. I use [chocolatey](https://chocolatey.org/) to install all the programs I use in one go.
+I tend to reinstall windows every couple months with the help of [chocolatey](https://chocolatey.org/).
 
 ### Installation
 
