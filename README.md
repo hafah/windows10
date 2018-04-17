@@ -1,3 +1,4 @@
+
 # I don't want to click NEXT
 
 I tend to reinstall windows every month with the help of [chocolatey](https://chocolatey.org/).
@@ -29,6 +30,7 @@ source /etc/profile.d/rvm.sh
 
 rvm install 2.3.1
 sudo gem install tmuxodoro
+sudo gem install tmuxinator
 
 sudo apt-get -y install php php-pear
 sudo apt-get -y install php7.0-dev
