@@ -14,6 +14,10 @@ iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
 refreshenv;
 $uri = 'https://raw.githubusercontent.com/hafah/windows10/master/install.ps1';
 iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
+Import-Module BitsTransfer;
+$uri = 'https://raw.githubusercontent.com/hafah/windows10/master/capstoctrl.reg';
+Start-BitsTransfer -Source $uri;
+regedit -s ./capstoctrl.reg;
 ```
 
 
