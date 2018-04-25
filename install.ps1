@@ -20,3 +20,4 @@ choco install -y vagrant;
 choco install -y virtualbox;
 choco install -y vlc;
 choco install -y whatsapp;
+choco install -y vcxsrv;
