@@ -1,7 +1,7 @@
 
-# Keeping your windows installation fresh.
+# I don't want to click NEXT
 
-Software Management Automation allows for often reinstalling windows. I tend to reinstall windows every couple months. I use [chocolatey](https://chocolatey.org/) to install all the programs I use in one go.
+I tend to reinstall windows every month with the help of [chocolatey](https://chocolatey.org/).
 
 ### Installation
 
@@ -14,6 +14,10 @@ iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
 refreshenv;
 $uri = 'https://raw.githubusercontent.com/hafah/windows10/master/install.ps1';
 iex ((New-Object System.Net.WebClient).DownloadString("$uri"));
+Import-Module BitsTransfer;
+$uri = 'https://raw.githubusercontent.com/hafah/windows10/master/capstoctrl.reg';
+Start-BitsTransfer -Source $uri;
+regedit -s ./capstoctrl.reg;
 ```
 
 
@@ -25,11 +29,12 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install build-essential curl dos2unix tmux wget zip vagrant fish-common nodejs silversearcher-ag 
 sudo apt-get -y install git golang-go html2text python3 php php-curl python-minimal python-software-properties 
-sudo apt-get -y install p7zip-full vagrant virtualbox dkms zip software-properties-common rvm fdclone
+sudo apt-get -y install p7zip-full vagrant virtualbox dkms zip software-properties-common rvm exuberant-ctags fdclone
 source /etc/profile.d/rvm.sh
 
 rvm install 2.3.1
 sudo gem install tmuxodoro
+sudo gem install tmuxinator
 
 sudo apt-get -y install php php-pear
 sudo apt-get -y install php7.0-dev
