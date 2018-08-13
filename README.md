@@ -49,7 +49,7 @@ sudo apt-get purge virtualbox
 sudo apt-get remove virtualbox-dkms
 ```
 
-####### old vagrant > 2.1?
+###### old vagrant < 2.1?
 
 ```sh
 sudo apt purge -y vagrant
