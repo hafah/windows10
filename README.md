@@ -49,6 +49,16 @@ sudo apt-get purge virtualbox
 sudo apt-get remove virtualbox-dkms
 ```
 
+####### old vagrant > 2.1?
+
+```sh
+sudo apt purge -y vagrant
+cd /
+wget https://releases.hashicorp.com/vagrant/2.1.2/vagrant_2.1.2_x86_64.deb
+dpkg -i vagrant_2.1.2_x86_64.deb
+rm vagrant_2.1.2_x86_64.deb
+```
+
 ### Basic chocolatey commands
 
 ###### list
