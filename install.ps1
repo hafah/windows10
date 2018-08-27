@@ -1,4 +1,5 @@
 choco install -y 7zip.install;
+choco install -y anki;
 choco install -y chocolatey;
 choco install -y composer;
 choco install -y droidsansmono;
